@@ -1,12 +1,38 @@
-
-/* 
-
-    You can write your own styles here...
+body{
+    background-image: url(https://fastly.picsum.photos/id/318/3264/2448.jpg?hmac=zkYZ29-Ww_A4O_kZ3gjlpFQuEYELWgeM6aI_CMG01BU);
+    background-size: cover;
     
     
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
+}
+#clock{
+    display: flex;
+    justify-content: center;
+    margin-top: 350px;
+    font-size: 80px;
+    color: white;
     
-    import 'relative/path/to/stylesheet.scss';
 
-*/
+}
+.number{
+    text-align: center;
+    background-color: rgb(33, 33, 33);
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 90px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    background-color: rgb(33, 33, 33);
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 90px;
+    height: 120px;
+}
+#relog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
