@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 
 // include your styles into the webpack bundle
 import "../styles/index.css";
@@ -13,5 +13,9 @@ let counter = 0;
 
 setInterval(() => {
     counter += 1;
-    ReactDOM.render(<Home seconds={counter}  />, document.querySelector("#app"));
+    
+    const root = ReactDOM.createRoot(document.querySelector('#app'));
+root.render(<Home seconds={counter} />);
 },1000)
+
+
